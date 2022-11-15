@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+	header{
+		color: green
+	}
+    header nav ul{
+        display: inline-block;
+        align-items: center;
+        padding: 20px 10%;
+
+        transition: 0.2s ease-in;
+        }
+    h1{
+        text-align: center;
+        color: green;
+        padding: 20px;
+    }
+    nav{
+        background-color: lime;
+        display: grid;
+        place-items: center;
+    }
+    #logo{
+        cursor: pointer;
+        margin-right: auto;
+        float: right;
+    }
+    nav ul{
+        list-style-type: none;
+    }
+    .nav_links li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .nav_links li:hover{
+        background-color: green;
+        color: white;
+    }
+
+    .item{
+      display: inline-block;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 30px 20px;
+      grid-column-gap: 20px;
+      grid-row-gap: 30px;
+    }
+
+    .item img{
+      object-fit: cover;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .item img:hover{
+      transform: scale(1.04);
+    }
+    .item h4{
+      padding: 5px;
+      text-align: inherit;
+    }
+    .item button{
+      padding: 5px 30px;
+      border: none;
+      outline: inherit;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 20px;
+      display: block;
+      margin: 0 auto\auto;
+      transition: 0.2s all;
+    }
+    .item button:hover{
+      transform: scale(1.04);
+    }
+    @media screen and (max-width: 1000px){
+      .items{
+          grid-template-columns: repeat(2, 1fr)
+      }
+    }
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+.footer{
+  background-color: lightblue;
+  padding: 40px 0;
+}
+
+.footer .social{
+  text-align: center;
+  color: #ccc;
+}
+
+.footer .social a{
+  font-size: 25px;
+  color: black;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+}
